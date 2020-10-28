@@ -1,0 +1,83 @@
+.profile_wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 200px;
+
+}
+.profile_main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: grid;
+    background-color:  #f0f0f0;
+    grid-template-columns: 1.7fr 1fr;
+
+
+}
+.profile_main::before{
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background: url('/images/lines.png') no-repeat center center fixed ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 65%;
+    opacity: 0.13;
+}
+.profile_logo{
+    display: block;
+}
+.profile_logo img{
+    width: 180px;
+    height: 180px;
+    margin-top: 30%;
+    margin-left: 20%;
+    display: block;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 0px 18px 8px lightgrey;
+
+}
+.profile_menu{
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    grid-template-columns: repeat(4,minmax(100px,200px));
+
+}
+.profile_description{
+    display: grid;
+    grid-template-columns: 0.5fr;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: 100px 50px 200px 100px 100px;
+}
+.profile_credentials{
+    color: black;
+    font-size: 30px;
+}
+.profile_bio{
+    font-size:25px;
+    text-align: left;
+    color: grey;
+
+}
+.profile_contact{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,150px);
+    justify-content: center;
+    grid-gap: 40px;
+}
+.profile_contact button{
+    border-radius: 60px;
+
+    background-color:#0091d8;
+    color: #f0f0f0;
+    font-size: 15px;
+    border: none;
+    display: block;
+    padding: 15px 5px;
+}

@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import Wrapper from './components/Wrapper'
+import {BrowserRouter as Router} from 'react-router-dom'
 const App = (props) => {
   return(
-     <div>
-        <h1>Hello World</h1>
-     </div>
+      <Router>
+        <Wrapper/>
+      </Router>
   );
 }
 
